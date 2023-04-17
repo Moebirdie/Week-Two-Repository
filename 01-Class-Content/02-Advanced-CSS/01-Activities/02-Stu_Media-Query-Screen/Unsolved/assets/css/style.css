@@ -34,6 +34,26 @@ header {
   width: 100%;
 }
 
-/* TODO: Use media query to change the width of the cards so they split into two columns at 992px or smaller*/
+/* Media query to change the width of the cards so they split into two columns at 992px or smaller*/
 
-/* TODO: Use media query to change the width of the cards so they are stacked on top of each other at 768px or smaller */
+@media screen and (max-width:992px) {
+header {
+  background-color: rgb(34, 124, 124);
+}
+.card {
+  width: 50%;
+}
+}
+
+/* Media query to change the width of the cards so they split into one column at 768px or smaller*/
+
+@media screen and (max-width:768px) {
+  header {
+    background-color: rgb(121, 10, 74);
+  }
+  .card {
+    width: 100%;
+  }
+  }
+
+
