@@ -58,11 +58,31 @@ article p {
   margin: 2% 0;
   font-size: 110%;
 }
-
+span {
+  text-decoration: underline;
+  cursor: grab;
+  background-color: #fff;
+}
 /* TODO: Style the term/phrase - underline, black text, grab cursor */
-
+span[data-css]:hover::after {
+  content: attr(data-css);
+  padding:20px;
+  text-decoration: none;
+  background-color: #13293d;
+  color: #fff;
+  position: absolute;
+  z-index: 50;
+}
 /* TODO: Position tooltip above the term/phrase, same color as header and nav links, no border-radius, smaller font size */
-
+span[data-drag]:hover::after {
+  content: attr(data-drag);
+  padding:20px;
+  text-decoration: none;
+  background-color: #13293d;
+  color: #fff;
+  position: absolute;
+  z-index: 50;
+}
 aside {
   width: 25%;
 }

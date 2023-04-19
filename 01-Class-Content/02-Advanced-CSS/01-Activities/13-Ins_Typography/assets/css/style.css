@@ -69,7 +69,7 @@ article ul {
 .one {
   font-family: 'Helvetica', 'Arial', sans-serif;
   font-weight: 900;
-  font-style: oblique;
+  font-style: oblique 45deg;
 }
 
 .two {

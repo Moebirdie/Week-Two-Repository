@@ -85,14 +85,20 @@ footer {
   padding: 2%;
   background-color: #13293d;
   color: #fff;
+  font-size: 24px;
 }
 
 /* TODO: Add styles that will hide the resource links by default */
-
+.resources ul {
+  display: none; 
+  font-size: 18px; 
+}
 
 
 /* TODO: Add styles that will display the links when the mouse hovers over the parent element */
-
+.resources:hover ul {
+  display: block;
+}
 
 
 @media screen and (max-width: 768px) {
